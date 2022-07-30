@@ -55,6 +55,7 @@ Ahora ya se puede ejecutar el script de PowerShell
     En la nueva pestaña, en el cuadro de texto escribe **SYSTEM**, despues click en *Comprobar nombres*, despues en *Aceptar*
 
     ![](images/image6.1.png)
+    
     Debe algo quedar así
     ![](images/image6.2.png)
 
