@@ -52,16 +52,25 @@ Ahora ya se puede ejecutar el script de PowerShell
     - Selecciona *Ejecutar solo cuando el usuario haya iniciado sesión*
     - Y cambia la **Configuración** para *Windows 10*
 ![](images/image6.png)
+3.1 Da click en el botón **Cambiar usuario o grupo...**
+
+        En la nueva pestaña, en el cuadro de texto escribe **SYSTEM**, despues click en *Comprobar nombres*, despues en *Aceptar*
+![](IMAGES/image6.1.png)
+Debe algo quedar así
+![](images/image6.2.png)
+
 4. Cambia a la pestaña **Desencadenadores**, click en **Nuevo**
 ![](images/image7.png)
-Llena los campos necesarios de acuerdo a tu programación, puede ser diariamente, semanal o mensual. Y puedes elegir como se ejecuta, por ejemplo cuando se inicie la sesión o según programación (*Según programación* es a demanda y puedes programarlo)  
-***NOTA:** en caso de que ya exista un desencadenador creado, puedes modificarlo o agregar nuevos*
+Llena los campos necesarios de acuerdo a tu programación, puede ser diariamente, semanal o mensual. Y puedes elegir como se ejecuta, por ejemplo cuando se inicie la sesión o según programación (*Según programación* es a demanda y puedes programarlo) 
+
+    ***NOTA:** en caso de que ya exista un desencadenador creado, puedes modificarlo o agregar nuevos*
 
 5. Cambia a la pestaña **Acciones**, click en **Nueva**
 ![](images/image9.png)
 Selecciona **Acción:** *Iniciar un programa*.
-Click en *Examinar* y busca y selecciona el script de PowerShell, en *Agregar Argumentos* agrega el path completo del archivo a crear el backup. Por ejemplo:
-*D:\user\Documentos\Sintitulo.mp4*
+En **Examinar** escribe *PowerShell.exe* y en **Agregar Argumentos** agrega el path completo del script, seguido de un espacio y el path completo del archivo a crear el backup. Por ejemplo:
+
+    *D:\user\Documentos\powershell-backups.ps1 D:\user\Documentos\Sintitulo.mp4*
 ![](images/image10.png)
 
 6. En la pestaña **Condiciones** revisar los valores y modificar dependiendo el equipo. *Configuración recomendada:*
