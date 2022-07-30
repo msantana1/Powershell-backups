@@ -1,10 +1,9 @@
 # Powershell-backups
  Power shell script to create backups on Windows
-## Politica ejecución de scripts en Windows
+## Politica de ejecución de scripts en Windows
 ---
 
->**Tipos de políticas de ejecución de Powershell
-PowerShell tiene varias políticas de ejecución, cuatro de las más usadas son:** 
+>**PowerShell tiene varias políticas de ejecución, cuatro de las más usadas son:** 
 >
 >1. **Restricted:** ningún script será ejecutado. Como comentaba anteriormente, esta es la configuración predeterminada.
 >
@@ -13,8 +12,6 @@ PowerShell tiene varias políticas de ejecución, cuatro de las más usadas son:
 >3. **AllSigned:** los scripts solo se ejecutarán si está firmado por un editor de confianza. Aquí también se incluyen los scripts creados localmente.
 >
 >4. **Unrestricted:** todos los scripts se ejecutarán, da igual quién los haya creado y si están o no firmados. 
->
->Para poder ver la política actual de ejecución abriremos PowerShell a nivel administrador. Para ello deberemos hacer clic en Inicio, escribir "Windows PowerShell", hacer clic con el botón derecho encima de la aplicación y finalmente hacer clic en "Ejecutar como administrador".
 
 
 Abrir un PowerShell como Administrador y ejecutar
@@ -37,7 +34,7 @@ Get-ExecutionPolicy -List ​
 
 Ahora ya se puede ejecutar el script de PowerShell
 ~~~
-./powershell-backups.ps1
+./powershell-backups.ps1 D:\user\Documentos\Sintitulo.mp4
 ~~~
 
 ## Crear tarea programada en Windows
@@ -52,9 +49,10 @@ Ahora ya se puede ejecutar el script de PowerShell
     - Selecciona *Ejecutar solo cuando el usuario haya iniciado sesión*
     - Y cambia la **Configuración** para *Windows 10*
 ![](images/image6.png)
-3.1 Da click en el botón **Cambiar usuario o grupo...**
 
-        En la nueva pestaña, en el cuadro de texto escribe **SYSTEM**, despues click en *Comprobar nombres*, despues en *Aceptar*
+    3.1 Da click en el botón **Cambiar usuario o grupo...**
+
+    En la nueva pestaña, en el cuadro de texto escribe **SYSTEM**, despues click en *Comprobar nombres*, despues en *Aceptar*
 ![](IMAGES/image6.1.png)
 Debe algo quedar así
 ![](images/image6.2.png)
