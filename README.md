@@ -53,7 +53,7 @@ Ahora ya se puede ejecutar el script de PowerShell
     3.1 Da click en el botón **Cambiar usuario o grupo...**
 
     En la nueva pestaña, en el cuadro de texto escribe **SYSTEM**, despues click en *Comprobar nombres*, despues en *Aceptar*
-![](IMAGES/image6.1.png)
+![](images/image6.1.png)
 Debe algo quedar así
 ![](images/image6.2.png)
 
