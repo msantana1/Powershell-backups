@@ -50,16 +50,6 @@ Ahora ya se puede ejecutar el script de PowerShell
     - Y cambia la **Configuración** para *Windows 10*
 ![](images/image6.png)
 
-    3.1 Da click en el botón **Cambiar usuario o grupo...**
-
-    En la nueva pestaña, en el cuadro de texto escribe **SYSTEM**, despues click en *Comprobar nombres*, despues en *Aceptar*
-
-    ![](images/image6.1.png)
-
-    Debe algo quedar así
-
-    ![](images/image6.2.png)
-
 4. Cambia a la pestaña **Desencadenadores**, click en **Nuevo**
 ![](images/image7.png)
 
