@@ -42,6 +42,38 @@ Ahora ya se puede ejecutar el script de PowerShell
 
 ## Crear tarea programada en Windows
 ---
+1. Abre el programador de tareas de Windows
+![](images/image4.png)
+2. Vete a **Acccion** -> **Crear una nueva tarea**
+![](images/image5.png)
+3. En la pestaña **General** llena los siguientes datos
+    - Nombre
+    - Descripcion
+    - Selecciona *Ejecutar solo cuando el usuario haya iniciado sesión*
+    - Y cambia la Configuracion para *Windows 10*
+![](images/image6.png)
+4. Cambia a la pestaña **Desencadenadores**, click en **Nuevo**
+![](images/image7.png)
+Llena los campos neesarios de acuerdo a tu programacion, puede ser diariamente, semanal o mensual. Y puedes elegir como se ejecuta, por ejemplo cuando se inicie la sesión o según programacion (Segun programacion es a demanda y puedes programarlo) 
+***NOTA:** en caso de que ya exista un desencadenador creado, puedes modificarlo o agregar nuevos*
+
+5. Cambia a la pestaña **Acciones**, click en **Nueva**
+![](images/image9.png)
+Selecciona **Accion:** *Iniciar un programa*.
+Click en *Examinar* y busca y selecciona el script de PowerShell, en *Agregar Argumentos* agrega el path completo del archivo a crear el backup. Por ejemplo:
+*D:\user\Documentos\Sintitulo.mp4*
+![](images/image10.png)
+
+6. En la pestaña **Condiciones** revisar los valores y modificar dependiendo el equipo. *Configuración recomendada:*
+![](images/image11.png)
+
+7. En la pestaña **Configuracion**  revisar los valores y modificar dependiendo el equipo. *Configuración recomendada:*
+![](images/image12.png)
+
+8. Para finalizar, click en **Aceptar**
+![](images/image13.png)
+
+9. Revisar y confirmar que está corriendo
 
 
 #### Bibliografia

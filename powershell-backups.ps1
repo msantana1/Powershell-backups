@@ -1,4 +1,5 @@
-$file = "D:\user\Documentos\Sintitulo.mp4"
+#$file = "D:\user\Documentos\Sintitulo.mp4"
+$file = $args[0]
 
 $label_date = Get-Date -Format "MM-dd-yyyy-HH-mm"
 $label_path = Split-Path -Path $file
