@@ -79,7 +79,7 @@ En **Examinar** escribe *PowerShell.exe* y en **Agregar Argumentos** agrega el p
 6. En la pestaña **Condiciones** revisar los valores y modificar dependiendo el equipo. *Configuración recomendada:*
 ![](images/image11.png)
 
-7. En la pestaña **Configuracion**  revisar los valores y modificar dependiendo el equipo. *Configuración recomendada:*
+7. En la pestaña **Configuración**  revisar los valores y modificar dependiendo el equipo. *Configuración recomendada:*
 ![](images/image12.png)
 
 8. Para finalizar, click en **Aceptar**
