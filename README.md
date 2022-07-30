@@ -1,6 +1,7 @@
 # Powershell-backups
  Power shell script to create backups on windows
 ## Revisar ejecución de scripts **Windows Policies** 
+---
 
 >**Tipos de políticas de ejecución de Powershell
 PowerShell tiene varias políticas de ejecución, cuatro de las más usadas son:** 
@@ -27,3 +28,24 @@ Para cambiar
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser ​
 ~~~
 ![](images/image2.png)
+
+Revisar nueva configuracion
+~~~
+Get-ExecutionPolicy -List ​
+~~~
+![](images/image3.png)
+
+Ahora ya se puede ejecutar el script de PowerShell
+~~~
+./powershell-backups.ps1
+~~~
+
+## Crear tarea programada en Windows
+---
+
+
+#### Bibliografia
+---
+[Ejecucion de scripts PowerShell](https://www.cdmon.com/es/blog/la-ejecucion-de-scripts-esta-deshabilitada-en-este-sistema-te-contamos-como-actuar)
+
+[Programar tareas en Windows 10](https://www.genbeta.com/paso-a-paso/como-programar-tareas-en-windows-10)
