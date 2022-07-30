@@ -1,6 +1,6 @@
 # Powershell-backups
- Power shell script to create backups on windows
-## Revisar ejecución de scripts **Windows Policies** 
+ Power shell script to create backups on Windows
+## Politica ejecución de scripts en Windows
 ---
 
 >**Tipos de políticas de ejecución de Powershell
@@ -29,7 +29,7 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser ​
 ~~~
 ![](images/image2.png)
 
-Revisar nueva configuracion
+Revisar nueva configuración
 ~~~
 Get-ExecutionPolicy -List ​
 ~~~
@@ -42,24 +42,24 @@ Ahora ya se puede ejecutar el script de PowerShell
 
 ## Crear tarea programada en Windows
 ---
-1. Abre el programador de tareas de Windows
+1. Abre el Programador de tareas de Windows
 ![](images/image4.png)
 2. Vete a **Acccion** -> **Crear una nueva tarea**
 ![](images/image5.png)
 3. En la pestaña **General** llena los siguientes datos
     - Nombre
-    - Descripcion
+    - Descripción
     - Selecciona *Ejecutar solo cuando el usuario haya iniciado sesión*
-    - Y cambia la Configuracion para *Windows 10*
+    - Y cambia la **Configuración** para *Windows 10*
 ![](images/image6.png)
 4. Cambia a la pestaña **Desencadenadores**, click en **Nuevo**
 ![](images/image7.png)
-Llena los campos neesarios de acuerdo a tu programacion, puede ser diariamente, semanal o mensual. Y puedes elegir como se ejecuta, por ejemplo cuando se inicie la sesión o según programacion (Segun programacion es a demanda y puedes programarlo) 
+Llena los campos necesarios de acuerdo a tu programación, puede ser diariamente, semanal o mensual. Y puedes elegir como se ejecuta, por ejemplo cuando se inicie la sesión o según programación (*Según programación* es a demanda y puedes programarlo)  
 ***NOTA:** en caso de que ya exista un desencadenador creado, puedes modificarlo o agregar nuevos*
 
 5. Cambia a la pestaña **Acciones**, click en **Nueva**
 ![](images/image9.png)
-Selecciona **Accion:** *Iniciar un programa*.
+Selecciona **Acción:** *Iniciar un programa*.
 Click en *Examinar* y busca y selecciona el script de PowerShell, en *Agregar Argumentos* agrega el path completo del archivo a crear el backup. Por ejemplo:
 *D:\user\Documentos\Sintitulo.mp4*
 ![](images/image10.png)
